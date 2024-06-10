@@ -1,0 +1,20 @@
+﻿[
+  {
+    Type: Radiobutton,
+    Category: OOP,
+    Text: Test question,
+    Answers: [
+      {
+        Text: First answer,
+        IsCorrect: false,
+        IsDeleted: false
+      },
+      {
+        Text: Second answer,
+        IsCorrect: true,
+        IsDeleted: false
+      }
+    ],
+    IsDeleted: false
+  }
+]

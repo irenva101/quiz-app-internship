@@ -1,0 +1,31 @@
+<div *ngIf="questions.length > 0">
+  <h2>Test Questions</h2>
+  <div *ngIf="currentQuestion">
+    <p>{{ currentQuestionIndex + 1 }}/{{ questions.length }}</p>
+    <p>{{ currentQuestion.text }}</p>
+    <div *ngIf="currentQuestion.type === 1; else checkboxOptions">
+      <mat-radio-group [(ngModel)]="selectedAnswer">
+        <mat-radio-button *ngFor="let answer of currentQuestion.answers" [value]="answer">
+          {{ answer.text }}
+        </mat-radio-button>
+      </mat-radio-group>
+    </div>
+    <ng-template #checkboxOptions>
+      <div *ngFor="let answer of currentQuestion.answers">
+        <mat-checkbox [(ngModel)]="selectedAnswers[answer.id]" [value]="answer.text">
+          {{ answer.text }}
+        </mat-checkbox>
+      </div>
+    </ng-template>
+  </div>
+  <div>
+    <button mat-button (click)="previousQuestion()" [disabled]="currentQuestionIndex === 0">Back</button>
+    <button mat-button (click)="nextQuestion()" [disabled]="currentQuestionIndex === questions.length - 1">Next</button>
+  </div>
+</div>
+<div *ngIf="questions.length === 0">
+  <button mat-button (click)="startTest()">Start Test</button>
+</div>
+<div *ngIf="errorMessage">
+  <p>{{ errorMessage }}</p>
+</div>

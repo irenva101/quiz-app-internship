@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Konteh.FrontOfficeApi", "Konteh.FrontOfficeApi\Konteh.FrontOfficeApi.csproj", "{B54B4330-2B90-47DA-841F-995F3869173E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Konteh.BackOfficeApi", "Konteh.BackOfficeApi\Konteh.BackOfficeApi.csproj", "{9A6271D8-CC70-4C93-A757-9FDA70921E87}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Konteh.Domain", "Konteh.Domain\Konteh.Domain.csproj", "{3D13686E-7D94-469B-9993-9F22F5E742BB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Konteh.Infrastructure", "Konteh.Infrastructure\Konteh.Infrastructure.csproj", "{D6FDCFED-EB5B-491A-BE20-BB11B9FC5844}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C9C30A6B-92AB-4EEA-A716-4C4B3C9ED0F4}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Konteh.BackOfficeApi.Tests", "Konteh.BackOfficeApi.Tests\Konteh.BackOfficeApi.Tests.csproj", "{133ABE5D-8026-4063-A1ED-ACE3B3E545DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B54B4330-2B90-47DA-841F-995F3869173E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B54B4330-2B90-47DA-841F-995F3869173E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B54B4330-2B90-47DA-841F-995F3869173E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B54B4330-2B90-47DA-841F-995F3869173E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A6271D8-CC70-4C93-A757-9FDA70921E87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A6271D8-CC70-4C93-A757-9FDA70921E87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A6271D8-CC70-4C93-A757-9FDA70921E87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A6271D8-CC70-4C93-A757-9FDA70921E87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D13686E-7D94-469B-9993-9F22F5E742BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D13686E-7D94-469B-9993-9F22F5E742BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D13686E-7D94-469B-9993-9F22F5E742BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D13686E-7D94-469B-9993-9F22F5E742BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6FDCFED-EB5B-491A-BE20-BB11B9FC5844}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6FDCFED-EB5B-491A-BE20-BB11B9FC5844}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6FDCFED-EB5B-491A-BE20-BB11B9FC5844}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6FDCFED-EB5B-491A-BE20-BB11B9FC5844}.Release|Any CPU.Build.0 = Release|Any CPU
+		{133ABE5D-8026-4063-A1ED-ACE3B3E545DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{133ABE5D-8026-4063-A1ED-ACE3B3E545DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{133ABE5D-8026-4063-A1ED-ACE3B3E545DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{133ABE5D-8026-4063-A1ED-ACE3B3E545DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {359B707A-42BC-4C6F-AF5B-8A8BA9246955}
+	EndGlobalSection
+EndGlobal

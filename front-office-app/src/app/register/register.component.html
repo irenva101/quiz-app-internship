@@ -1,0 +1,61 @@
+<form class="reg-form" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+  <mat-form-field class="reg-full-width">
+    <mat-label>Company</mat-label>
+    <input matInput disabled value="NovaLite">
+  </mat-form-field>
+  <mat-form-field class="reg-full-width">
+    <mat-label>Email</mat-label>
+    <input matInput placeholder="Email@mail.com" formControlName="email">
+    <mat-error *ngIf="registerForm.get('email')?.hasError('required')">
+      Email is required
+    </mat-error>
+    <mat-error *ngIf="registerForm.get('email')?.hasError('email')">
+      Please enter a valid email address
+    </mat-error>
+    <mat-error *ngIf="registerForm.get('email')?.hasError('emailTaken')">
+      This email is already taken
+    </mat-error>
+  </mat-form-field>
+  <table class="reg-full-width" cellspacing="0">
+    <tr>
+      <td><mat-form-field class="reg-full-width">
+          <mat-label>First name</mat-label>
+          <input matInput placeholder="First name" formControlName="firstname">
+          <mat-error *ngIf="registerForm.get('firstname')?.hasError('required')">
+            First name is required
+          </mat-error>
+        </mat-form-field></td>
+      <td><mat-form-field class="reg-full-width">
+          <mat-label>Last Name</mat-label>
+          <input matInput placeholder="Last name" formControlName="lastname">
+          <mat-error *ngIf="registerForm.get('lastname')?.hasError('required')">
+            Last name is required
+          </mat-error>
+
+        </mat-form-field></td>
+    </tr>
+  </table>
+
+  <table class="reg-full-width">
+    <tr>
+      <td><mat-form-field class="reg-full-width">
+          <mat-label>Faculty</mat-label>
+          <input matInput placeholder="Faculty" formControlName="faculty">
+          <mat-error *ngIf="registerForm.get('faculty')?.hasError('required')">
+            Faculty is required
+          </mat-error>
+        </mat-form-field></td>
+      <td><mat-form-field class="reg-full-width">
+          <mat-label>Course</mat-label>
+          <input matInput placeholder="Course" formControlName="course">
+          <mat-error *ngIf="registerForm.get('course')?.hasError('required')">
+            Course is required
+          </mat-error>
+        </mat-form-field></td>
+    </tr>
+  </table>
+
+  <div>
+    <button mat-button type="submit">Submit</button>
+  </div>
+</form>

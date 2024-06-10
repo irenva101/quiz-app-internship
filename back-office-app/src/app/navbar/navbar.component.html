@@ -1,0 +1,6 @@
+<mat-toolbar color="primary">
+    <button mat-button (click)="navigateTo('')">Home</button>
+    <button mat-button *ngIf="!loginDisplay" (click)="login()">Login</button>
+    <button mat-button *ngIf="loginDisplay" (click)="logout()">Logout</button>
+    <button mat-button *ngIf="loginDisplay" (click)="navigateTo('/questions')">Questions</button>
+</mat-toolbar>

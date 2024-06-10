@@ -1,0 +1,8 @@
+--Create migration(doesn't matter which API you select):
+dotnet ef migrations add YOUR_MIGRATION_NAME -p Konteh.Infrastructure -s Konteh.FrontOfficeApi
+
+--Update database:
+dotnet ef database update -p Konteh.Infrastructure -s Konteh.FrontOfficeApi
+
+--Remove last migration
+dotnet ef migrations remove -p Konteh.Infrastructure -s Konteh.FrontOfficeApi
